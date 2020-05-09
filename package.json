@@ -1,0 +1,24 @@
+{
+  "name": "one-utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+		"js utils,js format,js file, js observer"
+	],
+	"author": {
+		"name": "dengrc",
+		"url": "https://github.com/dengrc"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/dengrc/one-utils/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/dengrc/one-utils.git"
+	},
+}
