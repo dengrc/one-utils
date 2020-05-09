@@ -4,7 +4,7 @@
  */
 export function debounceRequestAnimationFrame(callback) {
     let raf = 0;
-    return function (this) {
+    return function () {
         cancelAnimationFrame(raf);
         raf = requestAnimationFrame(() => {
             callback.apply(this, arguments)
@@ -18,7 +18,7 @@ export function debounceRequestAnimationFrame(callback) {
  */
 export function debounce(callback, delay = 0) {
     let raf = 0;
-    return function (this) {
+    return function () {
         clearTimeout(raf);
         raf = setTimeout(() => {
             callback.apply(this, arguments)
