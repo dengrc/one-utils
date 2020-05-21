@@ -1,4 +1,4 @@
-/**
+﻿/**
  * url 参数转为 json
  * @param {string} params 
  */
@@ -7,7 +7,7 @@ export function toJSON(params) {
     params.split('&').forEach((param) => {
         const ary = param.split('=');
         const name = decodeURIComponent(ary.shift());
-        const value = decodeURIComponent(ary.json('='));
+        const value = decodeURIComponent(ary.join('='));
         if (name in json) {
             Array.isArray(json[name]) ? json[name].push(value) : (json[name] = [json[name], value])
             return
